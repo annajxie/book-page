@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homepage</title>
+
+        <meta charset="UTF-8">
+        <meta name="keywords" content="fantasy, young adult, ITP 104 project, romance, friendship, novel, main page">
+        <!--content usually is a list of keywords used by search engines; go in order of important
+        google doesn't look at keyowrds tags, googly stopped using it bc too many trolls used random keywords-->
+
+        <meta name="description" content="A book proposal for a young adult fantasy novel with the potential for a duology. The 
+        book is about a young girl who leaves her small town to puruse a dream that lands her in an adventure of a lifetime. She
+        makes new friends, finds a love, and helps save the world.">
+        <!--short description about webpage
+        is what appears in description tag when search engine outputs search input (like on google)-->
+	    <meta name="viewport" content="width=device-width, initial-scale:1.0">
+
+        <link rel="stylesheet" href="main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Metamorphous&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Metamorphous&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+
+        <style>
+
+            #header{
+                background-image: url('./img/green-fantasy.jpg');
+            }
+
+            #content{
+                background-color: white;
+            }
+
+            body{
+                background-color: white;
+            }
+
+            h1{
+                position: relative;
+                top: 300px;
+                text-decoration: none;
+                color: black;
+                text-align: center;
+                text-shadow: 1px 1px 1px white;
+                
+            }
+
+            h2{
+                font-family: Metamorphous, fantasy, Helvetica;
+                font-size: 2em;
+            }
+
+            h3{
+                font-family: Parkinsans, sans-serif, Georgia;
+                font-size: 20px;
+            }
+
+            p{
+                font-family: Parkinsans, sans-serif, Georgia;
+                font-size: 0.9rem;
+            }
+
+            #column-parts{
+                width: 800px;
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 30px;
+                margin-left: 0px;
+                gap: 10px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .box{
+                flex: 1;
+                padding: 20px;
+                padding-top: 0px;
+                background-color: white;
+                border: 1px solid black;
+                border-radius: 8px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                min-height: 200px;
+                background-color: rgb(245, 234, 234)
+            }
+            
+           
+
+            .lead-sentence{
+                font-family: Handwriting, fantasy, Helvetica;
+                font-size: 1.75em;
+                font-style:oblique;
+                color: darkblue;
+                justify-content: center;
+
+            }
+
+            .world-building{
+                margin-left:auto;
+                margin-right:auto;
+                text-align: center;
+                border-top: 2px dashed black;
+                padding-top: 40px;
+
+            }
+
+            #info-block{
+                width: 100%;
+                display: grid;
+                align-items: center;
+                justify-items: center;
+                grid-template-columns: repeat(2,1fr);
+                margin-left:auto;
+                margin-right:auto;
+                gap: 30px;
+                border-bottom: 2px dashed black;
+                padding-bottom: 40px;
+            }
+
+            .circle-img{
+                width: 600px;
+                height: 600px;
+                border-radius: 50%;
+                transition: opacity 0.5s ease, transform 0.5s ease;
+                border: 1px solid black;
+                background-color: rgb(228, 208, 208);
+            }
+
+            .circle-img img{
+                width: 90%;
+            }
+
+
+            .section:hover .circle-img{
+                opacity: 0.1;
+                transform: scale(1.05);
+            }
+            .paragraph{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                color: black;
+                transform: translate(-50%,-50%);
+                text-align: center;
+                font-size: 10px;
+                opacity: 0;
+                transition: opacity 0.5s ease;
+                pointer-events: none;
+            }
+            .section:hover .paragraph{
+                opacity:1;
+            }
+            .section{
+                position: relative;
+                width: 600px;
+                height: 600px;
+            }
+
+            #writing-sample{
+                padding-bottom: 20px;
+                text-align: center;
+                width: 750px;
+                margin: auto;
+            }
+           
+            iframe{
+                width: 100%;
+                height: 500px;
+                border: none;
+                border-radius: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <h1>Flowers in a Thunderstorm</h1>
+        </div>
+
+        <div id="navbar">
+            <!--main headers: home, characters, plot outline
+            sub-header: contact-->
+            <div id="icon">
+                <a href="./assignment_09.html">
+                    <img src="./img/fantasy-dragon.png" alt="dragon-icon">
+                </a>
+            </div>
+            <div id="navbar-headers">
+                <ul id="top-menu">
+                    <li>
+                        <a href="./assignment_09.html" class="nav-header">home</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#contact-block" class="nav-header">contact</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="nav-header" href="./characters.html">characters</a>
+                    </li>
+                    <li>
+                        <a class="nav-header" href="./plot_outline.html">plot outline</a>
+                    </li>
+                </ul>
+                <div class="clearfloat"></div>
+            </div>
+        </div>
+
+        <div id="content">
+
+            <div id="container">
+                <div id="column">
+                    <div id="column-parts">
+                        <div id="book-summary" class="box">
+                            <h2>Book Summary</h2>
+                            <p class="lead-sentence">Hands that reach for the sky must also feed the earth.</p>
+                            <p>
+                                Emilia Sei lived her whole life in one village that was barely a village in 
+                                the country of Aria. Under the tutelage of her adoptive mother, she's capable, kind, and 
+                                intelligent. Also like her mother, she's gotten a particular passion for a dying craft: 
+                                the study of manonaya. The type of magic that taps into the magic of the earth and sky to 
+                                perform miracles. 
+                            </p>
+                            <p>
+                                When Lia recieves a letter of apprenticeship under the most prestigious scientist in the country, she 
+                                feels she has no choice but to accept. Even if it means leaving her mother, sisters, and the small 
+                                life she's been imprisoned and kept safe by. As she settles into a new life of independence through sheer 
+                                force of will, she's thrown into a world of the oldest types of magic, new friends, and an adventure of a 
+                                lifetime.
+                            </p>
+                        </div>
+
+                        <div id="market-analysis" class="box">
+                            <h2>Market Analysis</h2>
+                            <p>
+                                Genre: Young Adult/Fantasy 
+                            </p>
+                            <p>
+                                The book has a deep magical background that embeds itself into the plot and the main characters. 
+                                There is friendship and romance. 
+                            </p>
+                            <p>
+                                Similar books include Six of Crows duology by Leigh Bardugo and Spin the Dawn by Elizabeth Lim. When writing, 
+                                I was inspired by the crows' friendship dynamics and the relationship between Spin the Dawn's love interests. 
+                                With friendship, I found emphasizing this silent but ever present trust that laxes into something fun and reassuring
+                                was the best way to portray their teamwork. For romance, I liked that they trusted each other immediately. Trust came 
+                                as a pre-cursor to love. 
+                            </p>
+                            <p>
+                                Similar series are Yona of the Dawn and One Piece. One Piece for the unconditional loyalty and close-knit friendship.
+                            </p>
+                        </div>
+
+                    </div>
+                    
+                </div>
+                    
+                <h2 class="world-building">World Building</h2>
+
+            <div id="info-block">
+
+                <div id="nation" class="section">
+                    <img src="./img/map.jpg" class="circle-img" alt="map"> 
+                    <div class="paragraph">
+                        <h3>Nation</h3>
+                        <p>
+                            The story takes place in Aria, a country that's more or less conquered many surrounding nations. The 
+                            people we see the main characters interact with mainly (her friends and love interest) are among the sheltered 
+                            but on the border towns of Aria are people being oppressed and mistreated. 
+                        </p>
+                        <p>
+                            The central villains of the story desire the power to rid the world of Aria (hence destroying the land) so they can champion a 
+                            world that doesn't have conquerors and conquerors, but just wild magic and people who can use it. While the story ends with the 
+                            villains losing, Lia and her friends began to understand their perspective and changed Aria's government to one that allies with other 
+                            nations rather than conquer them. 
+                        </p>
+                    </div>
+                </div>
+
+                <div id="magic-system" class="section">
+                    <img src="./img/magic-system.jpg" class="circle-img" alt="magic">
+                    <div class="paragraph">
+                        <h3>Magic System</h3>
+                        <p>
+                            The magic that exists in Lia's current world is vastly more diluted than the magic that existed back then.
+                        </p>
+                        <p>
+                            Ancient magic existed in creatures and when non-humans roamed the earth. Griffins, lion turtles, pegasi, sea serpents, you name it, the 
+                            wild and free type of magic made it exist. But, over time, as humans expanded both in population and technology, the magic began to retreat.
+                            Whether hunted by humans or just naturally vanished, magic is still a resource but one not nearly as bountiful as mined ore or water. 
+                        </p>
+                        <p>
+                            There are certain weapons and items that contain magic -- certain minerals and creatures that contain magic still. Though, where magic most 
+                            potently exists and where it's the most bountiful is in plants, which is what Lia studies. It's a dying craft though -- studying and sorting 
+                            through all the magic plants -- but that exactly makes her an asset to the team.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="legends" class="section">
+                    
+                    <img src="./img/legend.jpg" class="circle-img" alt="legend">
+                    <div class="paragraph">
+                        <h3>Legends</h3>
+                        <p>
+                            Vinaya - the moon goddess. Vinaya, a warrior goddess, was 
+                            trusted by the gods to tame the seas. Her weapon was a spear, and her steed was Yulin the dragon. 
+                        </p>
+                        <p>
+                            Aisimel -- a kind giant, which was rare for his kind. He loved humans -- frail and tough as they were. One of his final acts, 
+                            he forged a sword that would protect anyone hurt.
+                        </p>
+                        <p>
+                            Yoki -- a young boy tried to defend his family.When his village came under attack, 
+                            he defended his village time and time again using a posessed demon dagger, 
+                            but, covered in blood so thick, he couldn't see who to attack and who to protect anymore.
+                        </p>
+                        <p>
+                            Sylvie -- a beautiful wind sprite. In her forest, trees, animals, and magic grew large and 
+                            gorgeous. She fell in love with a human in her forest. But, an arrow shot from a well-made bow killed him, and the heartbreak killed her. 
+                        </p>
+                    </div>
+                </div>
+                
+                <div id="weapons" class="section">
+                    
+                    <img src="./img/weapons.jpg" class="circle-img" alt="weapons">
+                    <div class="paragraph">
+                        <h3>Weapons</h3>
+                        <p>
+                            The spear: Vinaya's steed Yulin and the spear she left behind ended up melding together. Now whoever uses the spear must share a body with a dragon.
+                        </p>
+                        <p>
+                            The sword: Aisimel's sword grants only strength and the power to heal wounds. The kind giant once stipulated he would never harm anyone. Not willingly.
+                        </p>
+                        <p>
+                            The dagger: the demon whose power and spirit rests in the blade gives its wielder the power to use shadows and control minds. 
+                        </p>
+                        <p>
+                            The bow: the bow that killed Sylvie's love was cursed by her grief. In revenge, the sprite declared to the open and endless sky that whoever shoots with
+                            this bow will not miss. 
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="writing-sample">
+                <h2>Writing Sample</h2>
+                <iframe src="./media/chatper.pdf" name="my-frame"></iframe>
+            </div>
+        </div> <!--container-->
+
+        <div id="contact-block">
+            <h2 class="contact">Contact</h2>
+            <p>For more information, email author Anna Xie at <a href="mailto:ajxie@usc.edu">ajxie@usc.edu</a>. </p>
+        </div>
+
+    </div> <!--end of content-->
+
+            
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        
+    </body>
+</html>
